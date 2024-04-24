@@ -1,0 +1,63 @@
+/* Set box-sizing globally */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set base font size */
+body {
+    font-size: 16px;
+}
+
+/* Make header responsive */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: darkturquoise;
+}
+
+/* Make navigation responsive */
+.nav {
+    margin-left: 2rem; /* Adjust margin for smaller screens */
+}
+
+/* Make logo responsive */
+.logo img {
+    height: 3rem; /* Adjust logo height for smaller screens */
+    margin: 0.5rem;
+}
+
+/* Make about us section responsive */
+.aboutus {
+    font-size: 2em;
+    padding: 1em;
+}
+
+/* Make reasons row responsive */
+.reasons-row {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around; /* Adjust spacing for smaller screens */
+}
+
+/* Make footer responsive */
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .nav {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+    .logo img {
+        height: 2rem; /* Decrease logo height for smaller screens */
+    }
+    .aboutus {
+        font-size: 1.5em; /* Decrease font size for smaller screens */
+    }
+}

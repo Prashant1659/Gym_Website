@@ -1,0 +1,269 @@
+/* Default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: normal;
+}
+
+.logo img {
+    height: 60px;
+    margin: 1em;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav ul a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration-color: antiquewhite;
+}
+
+.nav ul li a {
+    display: inline-block;
+    width: fit-content;
+    transition: transform 1s;
+}
+
+.active,
+.nav a:hover {
+    color: orange;
+    text-decoration: wavy;
+    text-decoration-style: dashed;
+}
+
+.nav {
+    margin: 2em;
+    margin-bottom: 0;
+    margin-left: 20rem;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    background-color: transparent;
+    color: white;
+    background-color: darkturquoise;
+    position: fixed;
+    width: 100%;
+}
+
+.socials {
+    margin: 1em;
+    margin-top: 1.7em;
+    margin-right: 100px;
+    display: flex;
+}
+
+.socials img {
+    height: 30px;
+}
+
+.main {
+    height: 100px;
+}
+
+.wcu {
+    padding: 20px;
+    height: 500px;
+}
+
+.wcu_text span {
+    display: block;
+    font-size: 1.7em;
+}
+
+.wcu_text {
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+.reasons {
+    padding: 20px;
+    width: 20%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px rgb(240, 110, 63);
+    background-color: rgb(246, 172, 34);
+    font-weight: 600;
+    font-size: large;
+    margin-top: 1em;
+}
+
+.reasonsImg {
+    border: 3px solid green;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.reasonsImg img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.reasons h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.reasons-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    width: 98%;
+    margin: 20px 0 20px 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.trainer {
+    margin: 10px;
+    width: 33%;
+    height: fit-content;
+    background-color: aqua;
+}
+
+.trainer img {
+    width: 98%;
+    margin: 4px;
+}
+
+.division {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: -1;
+    font-size: 1.1em;
+    padding: 0 50px;
+}
+
+.foot1 {
+    display: inline-block;
+    padding-left: 50px;
+    width: 30%;
+    text-align: center;
+    height: 150px;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.foot1 img {
+    height: 4em;
+    width: 4em;
+}
+
+.foot2 {
+    display: inline-block;
+    width: 20%;
+    height: fit-content;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.foot2 .foot2links a {
+    transition: transform 0.5s;
+    line-height: 1.5em;
+    color: gray;
+}
+
+.foot2 a:hover {
+    color: orange;
+    cursor: pointer;
+    transform: scale(1.2);
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+#tips ul {
+    list-style-type: none;
+    padding: 0.3em;
+}
+
+.division a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+
+#tips ul li {
+    display: inline-block;
+    color: grey;
+    opacity: 0.6;
+}
+
+#tips a {
+    color: grey;
+    font-size: 1.5em;
+}
+
+footer {
+    height: 200px;
+    position: relative;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        margin-left: 0;
+    }
+
+    .socials {
+        margin-right: 20px;
+    }
+
+    .form-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div1 {
+        width: 90%;
+    }
+
+    .form-container form input {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        margin: 1em;
+    }
+
+    .socials {
+        margin-right: 10px;
+    }
+
+    .contactUs-container {
+        padding: 50px;
+    }
+
+    .data {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
